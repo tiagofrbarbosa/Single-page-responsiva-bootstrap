@@ -4,15 +4,53 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/estilos.css">
 </body>
 </head>
-<body>
-		<section class="container">
-			<h2>Sobre Nós</h2>
-			<img class="img-responsive" src="img/tecnologia-informacao.jpg">
+<body> 
 
-		<div class="panel-group" id="paineis-sobre">
+		<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="collapse-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#sobre-nos">Sobre Nós</a></li>
+						<li><a href="#nossos-projetos">Nossos Projetos</a></li>
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="capa-banner">
+			<h1>Empresa de TI</h1>
+			<p>atendendo sua empresa desde 2016.</p>
+			<button class="btn btn-primary btn-lg">Contate-nos agora</button>
+		</div>
+	</header>
+
+
+		<section id="sobre-nos" class="container">
+			<h2>Sobre Nós</h2>
+
+			<div class="row">
+			<img class="img-responsive col-sm-6" src="img/tecnologia-informacao.jpg">
+
+		<div class="panel-group col-sm-6" id="paineis-sobre">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title" data-toggle="collapse" data-target="#paragrafo-um" data-parent="#paineis-sobre">Desde 2016</h3>
@@ -50,6 +88,7 @@
 				
 			</div>
 		 </div>
+		</div>
 		</section>
 
 		<div class="jumbotron">
@@ -59,10 +98,11 @@
 			</div>
 		</div>
 
-	<section class="container">
+	<section id="nossos-projetos" class="container">
 	<h2>Nossos projetos</h2>
-	<figure class="thumbnail">
-	    	<img class="img-fluid" src="img/data-center.jpg">
+	<div class="row">
+	<figure class="thumbnail col-sm-6">
+	    	<img class="img-fluid" src="img/sistemas.jpg">
 		<figcaption class="caption">
 		    <h3>Data center</h3>
 		    <p>Estrutura de data center, infraestrutura e consultoria em serviços.</p>
@@ -70,7 +110,7 @@
 	</figure>
 
 
-	<figure class="thumbnail">
+	<figure class="thumbnail col-sm-6">
 	    	<img class="img-fluid" src="img/sistemas.jpg">
 		<figcaption class="caption">
 		    <h3>Sistemas</h3>
@@ -79,8 +119,8 @@
 	</figure>
 
 
-	<figure class="thumbnail">
-	    	<img class="img-fluid" src="img/impressoras.jpg">
+	<figure class="thumbnail col-sm-6">
+	    	<img class="img-fluid" src="img/sistemas.jpg">
 		<figcaption class="caption">
 		    <h3>Outsourcing</h3>
 		    <p>Temos outsourcing de equipamentos para atender seu negócio.</p>
@@ -88,8 +128,8 @@
 	</figure>
 
 
-	<figure class="thumbnail">
-	    	<img class="img-fluid" src="img/consultor.jpg">
+	<figure class="thumbnail col-sm-6">
+	    	<img class="img-fluid" src="img/sistemas.jpg">
 		<figcaption class="caption">
 		    <h3>Consultores em Tecnologia da informação</h3>
 		    <p>Encontre um consultor para ajudar com seus processos.</p>
@@ -97,14 +137,18 @@
 	</figure>
 
 
-	<figure class="thumbnail">
-	    	<img class="img-fluid" src="img/terceiros.jpg">
+	<figure class="thumbnail col-sm-6">
+	    	<img class="img-fluid" src="img/sistemas.jpg">
 		<figcaption class="caption">
 		    <h3>TI terceirizada</h3>
 		    <p>Cuidamos da TI na sua empresa.</p>
 		 </figcaption>
 	</figure>
+	</div>
 </section>
+
+<section id="depoimentos">
+<h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -148,8 +192,75 @@
         <span class="sr-only">Next</span>
     </a>
 </div>			
+</section>
+
+		<section id="video" class="container">
+		<h2>Vídeo Institucional</h2>
+			<div class="embed-responsive embed-responsive-16by9">
+   	<iframe width="560" height="315" src="https://www.youtube.com/embed/Y4itMafQYUY" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<section id="contato" class="container">
+		<h2>Contato</h2>
+		<h4>Entre em contato conosco</h4>
+
+		<form>
+			<div class="form-group">
+				<label for="contato-nome">Nome:</label>
+				<input id="contato-nome" class="form-control" type="text" placeholder="Seu nome">
+			</div>
+
+			<div class="form-group">
+				<label for="contato-email">E-mail:</label>
+				<div class="input-group">
+					<div class="input-group-addon">@</div>
+	      	<input id="contato-email" class="form-control" type="email" placeholder="Seu e-mail">
+      	</div>
+			</div>
+
+			<div class="grupo-radio">
+				<div class="radio">
+					<label>
+						<input type="radio" name="tipo-pessoa" value="fisica" checked>
+						Pessoa física
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="tipo-pessoa" value="juridica">
+						Pessoa jurídica
+					</label>
+				</div>
+			</div><!--
+
+			--><select class="contato-select form-control" name="tipo-solicitacao">
+				<option value="" disabled selected>Tipo de solicitação</option>
+			  <option value="casa">Casa</option>
+			  <option value="apartamento">Apartamento</option>
+			  <option value="mansao">Mansão</option>
+			</select>
+
+			<button type="submit" class="btn btn-primary">Enviar</button>
+
+		</form>
+	</section>
+
+	<footer>
+	<address>
+		<strong>Empresa TI</strong><br>
+		Av. Paulista, 2000, São Paulo<br>
+		São Paulo, SP
+	</address>
+
+	<address>
+		Email: tiagofr.barbosa@hotmail.com.br
+	</address>
+	</footer>
 
 		 <script src="bootstrap/js/jquery-3.1.0.min.js"></script>
 		 <script src="bootstrap/js/bootstrap.min.js"></script>
+		 <script src="bootstrap/js/navbar-animate-fix.js"></script>
   </body>
 </html>
